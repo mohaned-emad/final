@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Login/Sign up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="kids.html">Kids</a></li>
+        <li class="right"><a href="sign.html">Sign up</a></li>
+    </ul>
+    <div style="position: absolute; right: 0; bottom: 0; display: none;">
+        text
+    </div>
+    <div class="container">
+        <form class="form" id="createAccount" method="get" action="index.html">
+            <h1 class="ftitle">Create Account</h1>
+            <div class="input">
+                <input type="text" name="first" id="first_name" class="form_input" required autofocus placeholder="First name">
+            </div>
+            <div class="input">
+                <input type="text" name="last" id="last_name" class="form_input" required placeholder="Last name">
+            </div>
+            <div class="input">
+                <input type="text" name="mobile" id="mobile" class="form_input" required placeholder="Mobile number">
+            </div>
+            <div class="input">
+                <input type="text" name="address" id="Address" class="form_input" required placeholder="Address">
+            </div>
+            <div class="input">
+                <input type="email" name="email" class="form_input" id="email" required placeholder="Email Address">
+            </div>
+            <div class="input">
+                <input type="password" name="pass" class="form_input" id="password" required placeholder="Password">
+            </div>
+            <div>
+                <input type="radio" class="gendre" name="gendre" value="male" id="male">
+                <span class="gendrevalue">Male</span>
+                <input type="radio" class="gendre" name="gendre" value="female" id="female">
+                <span class="gendrevalue">Female</span>
+            </div>
+            <input type="submit" class="log_button" value="sign up" id="submit">
+        </form>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>

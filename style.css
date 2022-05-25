@@ -1,0 +1,169 @@
+body{
+--primary_color: #034e90;
+--primary_dark: #03437b;
+--error: red;
+--success: green;
+--border_radius: 5px;
+
+margin: 0px;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 18px;
+}
+* {box-sizing: border-box;}
+ul{
+    background-color: #ffffff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    position: fixed;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    top: 0%;
+    width: 100%;
+    font: 500 1rem 'Roboto', sans-serif;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    
+}
+li a:hover{
+    background-color: #eeeeee;
+}
+.right{
+    float: right;
+}   
+.container {
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border_radius);
+    background: #ffffff;
+}
+.container,
+.form_input,
+.log_button {
+    font: 500 1rem 'Roboto', sans-serif;
+}
+.form > *:first-child {
+    margin-top: 0;
+}
+
+.form > *:last-child {
+    margin-bottom: 0;
+}
+#ftitle{
+    margin-bottom: 2rem;
+}
+.input{
+    margin-bottom: 1rem;
+}
+.form_input{
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border_radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+.form_input:focus {
+    border-color: black;
+    background: #ffffff;
+}
+.log_button {
+    width: 100%;
+    padding: 0.85rem 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius: var(--border_radius);
+    outline: none;
+    cursor: pointer;
+    background: black;
+}
+.log_button:hover {
+    background: rgb(23, 23, 23);
+}
+.log_button:active {
+    transform: scale(0.98);
+}
+.form_link {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.form_link:hover {
+    text-decoration: underline;
+}
+.form--hidden {
+    display: none;
+}
+.gendrevalue {
+    font: 500 1rem 'Roboto', sans-serif;
+}
+.gendre {
+    margin-bottom: 1rem;
+}
+.gendre:hover {
+    cursor: pointer;
+}
+.cont {
+    position: relative;
+    width: 147px;
+    height: 220px;
+}
+.image {
+    display: block;
+    width: 147px;
+    height: 220px;
+    transition: 0.5s ease;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 147px;
+    height: 220px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--primary_color);
+ }
+.cont:hover .image{
+    transform: scale(1.2);
+}
+.cont:hover .overlay {
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.info {
+    font-size: 12px;
+    color: #676767;
+}
